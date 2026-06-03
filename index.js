@@ -1,19 +1,14 @@
 const express = require('express');
-const mongoose = require('mongoose');
+const connectDB = require('./utils/db'); // Importamos la conexión
 const Movie = require('./models/Movie');
 
 const app = express();
 const PORT = 3000;
 
-// Para que Express entienda el formato JSON (la configuración)
+// Se ejecuta la conexión a la base de datos
+connectDB();
+
 app.use(express.json());
-
-// Conexión a MongoDB (Local)
-mongoose.connect('mongodb://127.0.0.1:27017/movies-server')
-  .then(() => console.log('Servidor conectado a MongoDB local'))
-  .catch(err => console.error('Error conectando a MongoDB:', err));
-
-
 
 // 1. Devolver todas las películas
 app.get('/movies', async (req, res) => {
