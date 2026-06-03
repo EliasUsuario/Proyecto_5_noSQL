@@ -1,0 +1,25 @@
+{
+  "name": "proyecto-5-nosql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EliasUsuario/Proyecto_5_noSQL.git"
+  },
+  "keywords": [],
+  "author": "Elias Martinez Ortega",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/EliasUsuario/Proyecto_5_noSQL/issues"
+  },
+  "homepage": "https://github.com/EliasUsuario/Proyecto_5_noSQL#readme",
+  "dependencies": {
+    "express": "^5.2.1",
+    "mongoose": "^9.6.3"
+  }
+}
